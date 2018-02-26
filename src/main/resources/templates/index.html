@@ -5,6 +5,9 @@
 	<div style="background-color: #EEEEEE;">
 		<img width="80%" th:src="@{../img/bg.jpg}" />
 	</div>
-	<h1>Wellcome To Casual World !</h1>
+	<div th:each="data,iterStat : ${datas}">
+	<h1 th:text="${data.name}"></h1>
+	</div>
+	
 </body>
 </html>
