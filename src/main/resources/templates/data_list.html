@@ -40,7 +40,8 @@
                         <tr bgcolor="#CCCCCC">
                             <th>STT</th>
                             <th>Tên</th>
-                            <th>Nội Dung</th>
+                            <th>Nội Dung 1</th>
+							<th>Nội Dung 2</th>
                             <th>Sửa</th>
                             <th>Xóa</th>
                         </tr>
@@ -49,7 +50,8 @@
                         <tr th:each="data,iterStat : ${datas}">
                             <td th:text="${iterStat.count}"></td>
                             <td th:text="${data.name}"></td>
-                            <td th:text="${data.about}"></td>
+                            <td th:text="${data.about1}"></td>
+							<td th:text="${data.about2}"></td>
                             <td><a th:href="@{/366026593/{id}/edit(id=${data.id})}"><span class="glyphicon glyphicon-pencil"></span></a></td>
                             <td><a th:href="@{/366026593/{id}/delete(id=${data.id})}"><span class="glyphicon glyphicon-trash"></span></a></td>
                         </tr>
