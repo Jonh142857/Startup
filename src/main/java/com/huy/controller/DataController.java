@@ -23,6 +23,7 @@ public class DataController {
 
     @GetMapping("/366026593")
     public String index(Model model) {
+        model.addAttribute("data", dataService.findAll());
         return "data_list";
     }
     
