@@ -26,18 +26,22 @@ public class Data implements Serializable {
 	@Column(name = "name", nullable = false)
 	private String name;
 
-	@Column(name = "about")
-	private String about;
+	@Column(name = "about1")
+	private String about1;
+	
+	@Column(name = "about2")
+	private String about2;
 
 	public Data() {
 		super();
 	}
 
-	public Data(int id, String name, String about) {
+	public Data(int id, String name, String about1, String about2) {
 		super();
 		this.id = id;
 		this.name = name;
-		this.about = about;
+		this.about1 = about1;
+		this.about2 = about2;
 	}
 
 	public int getId() {
@@ -56,12 +60,20 @@ public class Data implements Serializable {
 		this.name = name;
 	}
 
-	public String getAbout() {
-		return about;
+	public String getAbout1() {
+		return about1;
 	}
 
-	public void setAbout(String about) {
-		this.about = about;
+	public void setAbout1(String about1) {
+		this.about1 = about1;
+	}
+	
+	public String getAbout2() {
+		return about1;
+	}
+
+	public void setAbout2(String about2) {
+		this.about2 = about2;
 	}
 
 	public static long getSerialversionuid() {
