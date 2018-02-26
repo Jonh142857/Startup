@@ -18,6 +18,9 @@ import com.huy.service.DataService;
 @Controller
 public class DataController {
 
+    @Autowired
+    private DataService dataService;
+
     @GetMapping("/366026593")
     public String index(Model model) {
         return "data_list";
