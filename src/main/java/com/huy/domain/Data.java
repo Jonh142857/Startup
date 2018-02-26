@@ -30,18 +30,26 @@ public class Data implements Serializable {
 	private String about1;
 	
 	@Column(name = "about2")
-	private String about2;
+	private String about2;	
+	
+	@Column(name = "about3")
+	private String about3;
 
+	@Column(name = "about4")
+	private String about4;
+	
 	public Data() {
 		super();
 	}
 
-	public Data(int id, String name, String about1, String about2) {
+	public Data(int id, String name, String about1, String about2, String about3, String about4) {
 		super();
 		this.id = id;
 		this.name = name;
 		this.about1 = about1;
 		this.about2 = about2;
+		this.about3 = about3;
+		this.about4 = about4;
 	}
 
 	public int getId() {
@@ -69,13 +77,29 @@ public class Data implements Serializable {
 	}
 	
 	public String getAbout2() {
-		return about1;
+		return about2;
 	}
 
 	public void setAbout2(String about2) {
 		this.about2 = about2;
 	}
 
+	public String getAbout3() {
+		return about3;
+	}
+
+	public void setAbout3(String about3) {
+		this.about3 = about3;
+	}
+
+	public String getAbout4() {
+		return about4;
+	}
+
+	public void setAbout4(String about4) {
+		this.about4 = about4;
+	}
+	
 	public static long getSerialversionuid() {
 		return serialVersionUID;
 	}
