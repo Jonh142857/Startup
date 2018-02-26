@@ -14,26 +14,40 @@
 		        <label class="control-label col-sm-2 ">Tên:</label> 
 		        <div class="col-sm-10">
 		        <input type="text" class="form-control"
-		            th:field="*{name}" th:errorclass="field-error" placeholder="Nhập tên data" /> 
+		            th:field="*{name}" th:errorclass="field-error" placeholder="Nhập tên game" /> 
 		        <em th:if="${#fields.hasErrors('name')}" th:errors="*{name}"></em>
 		        <br/>
 		        </div>
 		    </div>
 		    <div class="form-group">
-		        <label class="control-label col-sm-2 ">Nội Dung 1:</label> 
+		        <label class="control-label col-sm-2 ">Hình ảnh</label> 
 		        <div class="col-sm-10">
-		        <textarea rows="4" class="form-control" th:field="*{about1}" placeholder="Nhập nội dung data 1" ></textarea>
+		        <textarea rows="4" class="form-control" th:field="*{about1}" placeholder="Nhập link hình ảnh" ></textarea>
 		        <br/>
 		        </div>
 		    </div>
 		    <div class="form-group">
-		        <label class="control-label col-sm-2 ">Nội Dung 2:</label> 
+		        <label class="control-label col-sm-2 ">AppStore</label> 
 		        <div class="col-sm-10">
-		        <textarea rows="4" class="form-control" th:field="*{about2}" placeholder="Nhập nội dung data 2" ></textarea>
+		        <textarea rows="4" class="form-control" th:field="*{about2}" placeholder="Nhập link AppStore" ></textarea>
 		        <br/>
 		        </div>
 		    </div>
-		    <a class="btn btn-primary btn-lg" th:href="@{/366026593}">Quay Lại</a>
+		    <div class="form-group">
+		        <label class="control-label col-sm-2 ">CHPlay</label> 
+		        <div class="col-sm-10">
+		        <textarea rows="4" class="form-control" th:field="*{about3}" placeholder="Nhập link CHPlay" ></textarea>
+		        <br/>
+		        </div>
+		    </div>
+		    <div class="form-group">
+		        <label class="control-label col-sm-2 ">Video</label> 
+		        <div class="col-sm-10">
+		        <textarea rows="4" class="form-control" th:field="*{about4}" placeholder="Nhập link Video" ></textarea>
+		        <br/>
+		        </div>
+		    </div>
+		    <a class="btn btn-default btn-lg" th:href="@{/366026593}">Quay Lại</a>
 		    <button type="submit" class="btn btn-primary btn-lg">Lưu</button>
 		</form>
         </div>
